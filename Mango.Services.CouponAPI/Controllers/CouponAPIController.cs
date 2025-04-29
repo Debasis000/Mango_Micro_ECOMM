@@ -41,7 +41,7 @@ namespace Mango.Services.CouponAPI.Controllers
         [HttpGet]
         [Route("{id:int}")]
         public async Task<ResponseDto> Get(int id)
-        {
+        {  
             try
             {
                 Coupon objList = await _context.Coupons.FirstAsync(u => u.CouponId == id);
